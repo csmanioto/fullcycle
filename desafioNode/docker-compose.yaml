@@ -32,7 +32,7 @@ services:
     volumes:
       - ./nodejs:/usr/src/app
     tty: true
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s nohup node index.js
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s node index.js &
     depends_on:
       - db
 
