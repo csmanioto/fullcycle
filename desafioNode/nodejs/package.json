@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "/usr/src/app/index.js",
+  "scripts": {
+    "start": "/usr/src/app/index.js start",
+    "build": "/usr/src/app/index.js build",
+    "test": "echo \"No test specified\"",
+    "eject": "index.js eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
