@@ -34,7 +34,7 @@ services:
     tty: true
     entrypoint: dockerize -wait tcp://db:3306 -timeout 20s nohup node index.js
     depends_on:
-       - db
+      - db
 
   nginx:
     build:
