@@ -5,7 +5,7 @@ COPY package.json /usr/src/app
 #RUN npm install
 
 COPY . /usr/src/app
-#RUN npm run build
+RUN npm init --yes
 RUN npm install mysql 
 
 # Installing Dockerize
@@ -15,5 +15,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
-#ENTRYPOINT ["nohup node index.js >> app.log 2>&1 &"]
 EXPOSE 3000
